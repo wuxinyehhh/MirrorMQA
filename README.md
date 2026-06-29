@@ -91,6 +91,21 @@ nohup python phi_sft.py > log/phi_sft_exp.log 2>&1 &
 nohup python qwen.py > log/qwen_exp.log 2>&1 &
 ```
 
+For open-source MLLMs, you need to execute bash files in the directory **_Code/finetune_** to perform fine-tuning:
+
+```bash
+cd Code/finetune
+mkdir -p log
+
+nohup bash deepseek.sh > log/deepseek_train.log 2>&1 &
+nohup bash intern3_5.sh > log/intern3_5_train.log 2>&1 &
+nohup bash janus.sh > log/janus_train.log 2>&1 &
+nohup bash llama.sh > log/llama_train.log 2>&1 &
+nohup bash llava_ov.sh > log/llava_ov_train.log 2>&1 &
+nohup bash mplug.sh > log/mplug_train.log 2>&1 &
+nohup bash phi.sh > log/phi_train.log 2>&1 &
+```
+
 For Gemini-2.5-flash and GPT-5.5, you can directly execute our Python files in **_Code/close_models_** to perform zero-shot, few-shot, and text-only inference, provided that you prepare the corresponding API key.
 
 ```bash
