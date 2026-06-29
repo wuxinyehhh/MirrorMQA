@@ -73,10 +73,7 @@ We disclose the inference code in the directory **_Code/experiment_**, and the f
 
 For open-source MLLMs, you can directly execute the Python files in **_Code/experiment_** to perform inference on models before and after fine-tuning.
 
-```bash
-cd Code/experiment
-mkdir -p log
-
+```text
 nohup python deepseek_vl2.py > log/deepseek_vl2_exp.log 2>&1 &
 nohup python instructblip.py > log/instructblip_exp.log 2>&1 &
 nohup python intern.py > log/intern_exp.log 2>&1 &
@@ -93,10 +90,7 @@ nohup python qwen.py > log/qwen_exp.log 2>&1 &
 
 For open-source MLLMs, you need to execute bash files in the directory **_Code/finetune_** to perform fine-tuning:
 
-```bash
-cd Code/finetune
-mkdir -p log
-
+```text
 nohup bash deepseek.sh > log/deepseek_train.log 2>&1 &
 nohup bash intern3_5.sh > log/intern3_5_train.log 2>&1 &
 nohup bash janus.sh > log/janus_train.log 2>&1 &
@@ -108,9 +102,7 @@ nohup bash phi.sh > log/phi_train.log 2>&1 &
 
 For Gemini-2.5-flash and GPT-5.5, you can directly execute our Python files in **_Code/close_models_** to perform zero-shot, few-shot, and text-only inference, provided that you prepare the corresponding API key.
 
-```bash
-cd Code/close_models
-
+```text
 python gemini_0.py
 python gemini_1.py
 python gemini_2.py
