@@ -23,7 +23,7 @@ MirrorMQA: A new benchmark dataset for mirror reasoning of MLLMs.
 
 ### Examples
 
-The following figures list several classic examples in our dataset. You can click to view the details after the image files are released.
+The following figures list several classic examples in our dataset. You can click the image and its corresponding `jsonl` file in [**_Examples_**](https://github.com/wuxinyehhh/MirrorMQA/tree/main/Examples) to view the details.
 
 ### Detail Information
 
@@ -75,7 +75,7 @@ For open-source MLLMs, you can directly execute the Python files in **_Code/expe
 
 For Gemini-2.5-flash and GPT-5.5, you can directly execute our Python files in **_Code/close_models_** to perform zero-shot, few-shot, and text-only inference, provided that you prepare the corresponding API key.
 
-Gemini needs to be applied for on the official website, and GPT access needs to be purchased on the official website.
+Gemini needs to be applied for on the [official website](https://ai.google.dev/gemini-api/docs), and GPT access needs to be purchased on the [official website](https://platform.openai.com/).
 
 ### Evaluation
 
