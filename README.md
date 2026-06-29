@@ -73,7 +73,38 @@ We disclose the inference code in the directory **_Code/experiment_**, and the f
 
 For open-source MLLMs, you can directly execute the Python files in **_Code/experiment_** to perform inference on models before and after fine-tuning.
 
+```bash
+cd Code/experiment
+mkdir -p log
+
+nohup python deepseek_vl2.py > log/deepseek_vl2_exp.log 2>&1 &
+nohup python instructblip.py > log/instructblip_exp.log 2>&1 &
+nohup python intern.py > log/intern_exp.log 2>&1 &
+nohup python janus.py > log/janus_exp.log 2>&1 &
+nohup python "llama _sft.py" > log/llama_sft_exp.log 2>&1 &
+nohup python llama.py > log/llama_exp.log 2>&1 &
+nohup python llava.py > log/llava_exp.log 2>&1 &
+nohup python minicpm.py > log/minicpm_exp.log 2>&1 &
+nohup python mplug.py > log/mplug_exp.log 2>&1 &
+nohup python phi.py > log/phi_exp.log 2>&1 &
+nohup python phi_sft.py > log/phi_sft_exp.log 2>&1 &
+nohup python qwen.py > log/qwen_exp.log 2>&1 &
+```
+
 For Gemini-2.5-flash and GPT-5.5, you can directly execute our Python files in **_Code/close_models_** to perform zero-shot, few-shot, and text-only inference, provided that you prepare the corresponding API key.
+
+```bash
+cd Code/close_models
+
+python gemini_0.py
+python gemini_1.py
+python gemini_2.py
+python gemini_3.py
+python gpt_0.py
+python gpt_1.py
+python gpt_2.py
+python gpt_3.py
+```
 
 Gemini needs to be applied for on the [official website](https://ai.google.dev/gemini-api/docs), and GPT access needs to be purchased on the [official website](https://platform.openai.com/).
 
