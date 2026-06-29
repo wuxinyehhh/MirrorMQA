@@ -1,10 +1,10 @@
-# MirrorMQA
+# MirrorMQA: Benchmarking Mirror Reasoning in Multimodal Large Language Models
 
 MirrorMQA: A new benchmark dataset for mirror reasoning of MLLMs.
 
 ## Contents
 
-- [MirrorMQA](#mirrormqa)
+- [MirrorMQA](#mirrormqa-benchmarking-mirror-reasoning-in-multimodal-large-language-models)
   - [1 Overview](#1-overview)
     - [Examples](#examples)
     - [Detail Information](#detail-information)
