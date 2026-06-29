@@ -78,13 +78,11 @@ nohup python deepseek_vl2.py > log/deepseek_vl2_exp.log 2>&1 &
 nohup python instructblip.py > log/instructblip_exp.log 2>&1 &
 nohup python intern.py > log/intern_exp.log 2>&1 &
 nohup python janus.py > log/janus_exp.log 2>&1 &
-nohup python "llama _sft.py" > log/llama_sft_exp.log 2>&1 &
 nohup python llama.py > log/llama_exp.log 2>&1 &
 nohup python llava.py > log/llava_exp.log 2>&1 &
 nohup python minicpm.py > log/minicpm_exp.log 2>&1 &
 nohup python mplug.py > log/mplug_exp.log 2>&1 &
 nohup python phi.py > log/phi_exp.log 2>&1 &
-nohup python phi_sft.py > log/phi_sft_exp.log 2>&1 &
 nohup python qwen.py > log/qwen_exp.log 2>&1 &
 ```
 
